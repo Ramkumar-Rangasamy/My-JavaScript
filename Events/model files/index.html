@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <!-- <script src="./javascript.js"></script> -->
+</head>
+<body>
+   Name: <input type="text" id="text1">
+   Dob : <input type="date" id="date">
+   Button: <button onclick="out()">Submit</button>
+    <input type="password" id="pass" >
+
+    <script>
+      function out(){
+        var a=document.getElementById("text1").value;
+        var b=document.getElementById("date").value;
+        var out =a.slice(0,3);
+        var result=out+" "+b;
+        document.getElementById("pass").value=result;
+       
+      }
+    </script>
+   
+</body>
+</html>
